@@ -10,4 +10,20 @@ do_ugopen_api() 函数是程序的主要函数，它调用其他函数来创建�
 
 The code uses various data types and functions provided by the UG Open API, such as tag_t for object IDs and UF_MODL functions for creating and manipulating objects. The UF_CALL macro is used to check for errors and report them if they occur.
 
-该代码使用了 UG Open API 提供的各种数据类型和函数，例如用于对象 ID 的 tag_t 和用于创建和操作对象的 UF_MODL 函数。 UF_CALL 宏用于检查错误并在错误发生时报告错误。
+代码使用了 UG Open API 提供的各种数据类型和函数，例如用于对象 ID 的 tag_t 和用于创建和操作对象的 UF_MODL 函数。 UF_CALL 宏用于检查错误并在错误发生时报告错误。
+
+Configuring Environment:
+
+配置环境：
+
+Projects → Properties → Configuration Properties → Linker → Input → Additional Dependencies: add libufun.lib;libugopenint.lib;libnxopencpp.lib;libnxopenuicpp.lib;
+
+项目→属性→配置属性→链接器→输入→附加依赖项：添加libufun.lib;libugopenint.lib;libnxopencpp.lib;libnxopenuicpp.lib;
+
+Linker → General → Additional Library Directories: add your directory of the UF library files, such as D:\UG12.0\UGOPEN
+
+链接器→常规→附加库目录：添加你的UF库文件的所在目录，例如D:\UG12.0\UGOPEN
+
+Configuration Properties → C/C++ → General → Additional Include Directories: D:\UG12.0\UGOPEN.
+
+配置属性→ C/C++→常规→附加包含目录：D:\UG12.0\UGOPEN
