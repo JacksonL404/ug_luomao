@@ -16,6 +16,8 @@ Configuring Environment:
 
 配置环境：
 
+Ug NX 12.0, VS2015(VC14)
+
 Projects → Properties → Configuration Properties → Linker → Input → Additional Dependencies: add libufun.lib;libugopenint.lib;libnxopencpp.lib;libnxopenuicpp.lib;
 
 项目→属性→配置属性→链接器→输入→附加依赖项：添加libufun.lib;libugopenint.lib;libnxopencpp.lib;libnxopenuicpp.lib;
